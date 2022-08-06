@@ -1,7 +1,7 @@
 # Site
 name: "Muneeb Ahmed"
 title: "Muneeb Ahmed | Blog"
-description: "My blogs will take you to the fabulous world of exploration. I talk science, mostly"
+description: "My blog will take you to the fabulous world of exploration. I talk science, mostly"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
@@ -19,8 +19,8 @@ authors:
     display_name: Muneeb
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     web: https://muneebpandith.github.io/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    twitter: https://twitter.com/munneeb
+    description: "PhD Student at IIT Delhi"
 # Plugins
 plugins:
   - jekyll-paginate
@@ -57,10 +57,10 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 # Post Author Box ("enabled" or "disabled")
-authorbox: "disabled"
+authorbox: "enabled"
 
 # Sass
 sass:
