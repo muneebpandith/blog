@@ -1,7 +1,7 @@
 # Site
 name: "Muneeb Ahmed"
 title: "Muneeb Ahmed | Blog"
-description: "My blog will take you to the fabulous world of exploration. I talk science, mostly"
+description: "My blog will take you to the fabulous world of exploration. I talk science, sometimes."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
