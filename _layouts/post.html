@@ -13,9 +13,7 @@ post_class: post-template
     {% if page.author %}
     <div class="d-flex align-items-center mt-4">
         <div>
-            {% if author.avatar %}
-            <img class="author-thumb" src="{{site.baseurl}}/../files/media/me.jpeg" alt="{{ author.display_name }}">
-            {% endif %}
+            <img class="author-thumb" src="https://muneebpandith.github.io/files/media/me.jpeg" style="width:62px;" alt="{{ author.display_name }}">
         </div>            
         <div>
         Written by <a class="text-dark" >{{ author.display_name }}</a> on 
@@ -32,13 +30,13 @@ post_class: post-template
 {% if site.adsense == "enabled" %}
     {% include adsense-under-header.html %}
 {% endif %}
-
+<div style="padding:10px; background:#ffffff; margin-top:10px; font-style:''; font-size:16px; font-family:Georgia, serif">
 <!-- Featured Image -->
 {% include featured-image.html %}
 
 <!-- Content -->
 {% include article.html %}
-
+</div>
 <!-- Rating -->
 {% if page.rating %}
 <div class="rating mt-4 mb-4 d-flex align-items-center">

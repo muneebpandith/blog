@@ -1,5 +1,18 @@
 <!-- Post, Page Content
 ================================================== -->
+<style>
+div.articlefirstParagh::first-letter {
+clear:left;
+line-height: 0.8;
+font-size:60px;
+float: left;
+margin-right: 2px;
+position: relative;
+display: block;
+font-family: Georgia;
+}
+</style>
+
 <div class="article-post">
     <!-- Toc if any -->
     {% if page.toc %}
@@ -12,5 +25,6 @@
     </div>
     {% endif %}
     <!-- End Toc -->
-    {{content}}
+    <div class="articlefirstParagh" style="text-align: justify; color:#000;">{{content}}</div>
+   
 </div>

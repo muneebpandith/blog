@@ -1,7 +1,7 @@
 # Site
 name: "Muneeb Ahmed"
 title: "Muneeb Ahmed | Blog"
-description: "My blog will take you to the fabulous world of exploration. I talk science, sometimes."
+description: "Reading here will lead to exploration. I talk Computer Science, mostly. Life, sometimes."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
@@ -14,10 +14,11 @@ email: wowthemesnet@gmail.com
 
 # Authors
 authors:
-  sal:
+  muneeb:
     name: Muneeb
     display_name: Muneeb
     web: https://muneebpandith.github.io/
+    avatar: https://muneebpandith.github.io/files/media/me.jpeg
     twitter: https://twitter.com/munneeb
     description: "Doctoral Scholar at IIT Delhi"
 # Plugins
