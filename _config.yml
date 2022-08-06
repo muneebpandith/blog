@@ -7,15 +7,15 @@ favicon: 'assets/images/logo.png'
 baseurl: /blog
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'demowebsite'
-mailchimp-list: ''
+mailchimp-list: 'https://github.us14.list-manage.com/subscribe?u=fab8368838238bf1b859e24bd&id=02b1332e1a'
 include: ["_pages"]
 permalink: /:title/
-email: wowthemesnet@gmail.com
+email: muneebpandith@gmail.com
 
 # Authors
 authors:
   muneeb:
-    name: Muneeb
+    name: Muneeb Ahmed
     display_name: Muneeb
     web: https://muneebpandith.github.io/
     avatar: https://muneebpandith.github.io/files/media/me.jpeg
