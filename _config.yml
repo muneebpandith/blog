@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: /blog
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 email: wowthemesnet@gmail.com
@@ -20,7 +20,7 @@ authors:
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     web: https://muneebpandith.github.io/
     twitter: https://twitter.com/munneeb
-    description: "PhD Student at IIT Delhi"
+    description: "Doctoral Scholar at IIT Delhi"
 # Plugins
 plugins:
   - jekyll-paginate
