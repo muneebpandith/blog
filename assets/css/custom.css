@@ -71,10 +71,16 @@
     }
 
 .card{
+  border-radius: 10px;
          box-shadow: 0 4px 8px rgb(48 48 48 / 64%);
         transition: all .2s ease-out;
+        border-radius:10px;
 }
 
 #postcontentX{
-  box-shadow: 0 2px 4px rgb(48 48 48 / 64%);
+  /*box: 0 0px 2px 0px px rgb(48 48 48 / 64%);*/
+}
+
+.featured-image{
+  border-radius:10px;
 }
