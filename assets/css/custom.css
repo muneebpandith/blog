@@ -69,3 +69,12 @@
 
    
     }
+
+.card{
+         box-shadow: 0 4px 8px rgb(48 48 48 / 64%);
+        transition: all .2s ease-out;
+}
+
+#postcontentX{
+  box-shadow: 0 2px 4px rgb(48 48 48 / 64%);
+}
