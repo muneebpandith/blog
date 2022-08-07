@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
+<style>
+    i#sh{
+        font-size:xx-large;
+    }
+</style>
 <div class="share">
     <p>
         Share
@@ -8,30 +13,30 @@
         
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="fab fa-twitter" style="color:#2cafff"></i>
+                <i  class="fab fa-twitter" style="color:#2cafff; font-size:xx-large;" ></i>
             </a>
         </li>
         <li class="ml-1 mr-1">
-            <a target="_blank" style="border:1px solid gray; border-radius:3px; padding:2px;" href="sms:?&body=Sharing an amazing post with you. Link 👉 {{ page.url | absolute_url }}" onclick="window.open(this.href, 'sms-share', 'width=550,height=435');return false;">
+            <a target="_blank" style="border:1px solid gray; border-radius:3px; padding:2px;font-size:x-large;" href="sms:?&body=Sharing an amazing post with you. Link 👉 {{ page.url | absolute_url }}" onclick="window.open(this.href, 'sms-share', 'width=550,height=435');return false;">
                 SMS
             </a>
         </li>
          <li class="ml-1 mr-1">
             <a target="_blank" href="whatsapp://send?text=Sharing an amazing post with you. Link 👉 {{ page.url | absolute_url }}">
-                <i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>
+                <i id="sh" class="fa-brands fa-whatsapp" style="color:#25D366;font-size:xx-large;" ></i>
             </a>
         </li>
  
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
-                <i class="fab fa-facebook" style="color:#4267B2;"></i>
+                <i id="sh" class="fab fa-facebook" style="color:#4267B2;font-size:xx-large;"></i>
             </a>
         </li>
 
       
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
-                <i class="fab fa-linkedin-in" style="color:#0037a9;"></i>
+                <i id="sh" class="fab fa-linkedin-in" style="color:#0037a9;font-size:xx-large;"></i>
             </a>
         </li>
 

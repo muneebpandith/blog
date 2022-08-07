@@ -705,6 +705,13 @@ body.active-side {
     .nav-icon, .sidebar, .share, .wrap-search {
         position:relative;
     }
+    .share ul
+    {
+    padding:10px;
+    margin:5px;
+    background: #f3f9aa;
+    }
+
     .container {
         padding-left:15px;
     }
