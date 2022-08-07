@@ -5,8 +5,8 @@ description: "Reading here will lead to exploration. I talk Computer Science, mo
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
-google_analytics: 'UA-xxxxxxxx-1'
-disqus: 'demowebsite'
+google_analytics: 'G-SKXP440FE6'
+disqus: 'disqus_HfCUcwZYNx'
 mailchimp-list: 'https://github.us14.list-manage.com/subscribe/post?u=fab8368838238bf1b859e24bd&id=02b1332e1a'
 include: ["_pages"]
 permalink: /:title/
