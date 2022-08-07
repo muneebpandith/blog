@@ -6,7 +6,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
 google_analytics: 'G-SKXP440FE6'
-disqus: 'disqus_HfCUcwZYNx'
+disqus: 'muneebblog'
 mailchimp-list: 'https://github.us14.list-manage.com/subscribe/post?u=fab8368838238bf1b859e24bd&id=02b1332e1a'
 include: ["_pages"]
 permalink: /:title/
