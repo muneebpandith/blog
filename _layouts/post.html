@@ -27,13 +27,24 @@ post_class: post-template
         </div>            
     </div>
     {% endif %}
+
 </div>
 
 <!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
 {% if site.adsense == "enabled" %}
     {% include adsense-under-header.html %}
 {% endif %}
-<div style="padding:10px; background:#ffffff; margin-top:10px; font-style:''; font-size:16px; font-family:Georgia, serif">
+<div id ="postcontentX" style="padding:10px; background:#ffffff; margin-top:10px; font-style:''; font-size:16px; font-family:Georgia, serif">
+<div class="readingdiv">
+        <span class="readinglabel" >📖 Reading mode?</span>
+        <label class="switch">
+          <input id="readingmodecheck" type="checkbox" onclick="readingmode()">
+          <span class="slider round"></span>
+
+        </label>
+
+    </div>
+
 <!-- Featured Image -->
 {% include featured-image.html %}
 
@@ -88,3 +99,10 @@ https://search.google.com/structured-data/testing-tool/u/0/
     }
     </script>
 {% endif %}
+<script>
+         if(localStorage.length > 0){
+            var readingmodechecked = JSON.parse(localStorage.getItem("readingmode"));
+            document.getElementById("readingmodecheck").checked = readingmodechecked;  
+            readingmode();
+            } 
+</script>

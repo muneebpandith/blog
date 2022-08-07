@@ -7,14 +7,42 @@
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
 <title>{{ page.title }} | {{site.name}}</title>
-
 {% seo %}
     
 <link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
 
 <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
-
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function readingmode()
+{
+var checkBox = document.getElementById("readingmodecheck");
+if (checkBox.checked == true)
+{
+/* ON */
+document.getElementById('bodyX').style.background='#f5f2e9';
+document.getElementById('bodyX').style.opacity=0.9;
+document.getElementById('postcontentX').style.background='#fbf8ef';
+document.getElementById('postcontentX').style.opacity=0.9;
+document.getElementsByClassName('sidebar')[0].style.background='#fbf8ef';
+document.getElementsByClassName('sidebar')[0].style.opacity=0.9;
+
+ }
+
+else{
+document.getElementById('bodyX').style.background='#f4f4f4';
+document.getElementById('bodyX').style.opacity=0.9;
+document.getElementById('postcontentX').style.background='#ffffff';
+document.getElementById('postcontentX').style.opacity=0.9;
+document.getElementsByClassName('sidebar')[0].style.background='#ffffff';
+document.getElementsByClassName('sidebar')[0].style.opacity=0.9;
+}
+localStorage.setItem("readingmode", checkBox.checked); 
+}
+</script>
 
 </head>
 
@@ -31,11 +59,11 @@ ga('send', 'pageview');
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body>
+<body id="bodyX">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 	</noscript>
 
 <!-- Begin Sidebar Navigation
@@ -70,7 +98,8 @@ ga('send', 'pageview');
    
     <a class="navbar-brand" href="{{ site.baseurl }}/">
         <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>  
+    </a> 
+    
    
 
     <!-- Site Tag
@@ -79,6 +108,14 @@ ga('send', 'pageview');
         <p class="sitetag">
             {{ site.description }}
         </p>
+        <div class="readingdiv">
+        <span class="readinglabel" >📖 Reading mode?</span>
+        <label class="switch">
+          <input id="readingmodecheck" type="checkbox" onclick="readingmode()">
+          <span class="slider round"></span>
+        </label>
+
+    </div>
     {% endif %}
 
     <!-- Content
@@ -136,6 +173,13 @@ ga('send', 'pageview');
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-
+<script>
+         if(localStorage.length > 0){
+            var readingmodechecked = JSON.parse(localStorage.getItem("readingmode"));
+            document.getElementById("readingmodecheck").checked = readingmodechecked;  
+            readingmode();
+            } 
+        </script>
 </body>
+
 </html>
