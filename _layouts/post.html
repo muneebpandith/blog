@@ -27,6 +27,18 @@ post_class: post-template
         </div>            
     </div>
     {% endif %}
+    
+    
+    <div class="d-flex" style="margin-top:10px; height:30px;">
+    <p>Tags :&nbsp;</p>
+    {% for category in page.categories %}    
+    <span class="smoothscroll badge badge-primary text-capitalize" style="margin-top:5px;">{{category}}</span> &nbsp;
+    {% endfor %}
+    <!--<div class="rating mt-4 mb-4 d-flex align-items-center">
+    <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+    </div>-->
+</div>
+
 
 </div>
 
