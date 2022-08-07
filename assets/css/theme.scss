@@ -675,7 +675,7 @@ body.active-side {
     }
     .newsletter {
         .mc-field-group input[type="email"] {
-            min-width:300px;
+            min-width:350px;
             width: 350px;
         }
     }
@@ -710,15 +710,10 @@ body.active-side {
     }
     .site-content {
         padding-top:0;
-        min-width: 480px;
+        min-width: 300px;
         margin: 0 auto;
     }
-     .footer {
-        padding-top:5px;
-         min-width: 350px;
-         width:350px;
-        margin: 10px auto;
-    }
+
     .bd-search {
         visibility: visible;
         opacity: 1;
